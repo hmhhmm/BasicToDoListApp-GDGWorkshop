@@ -26,13 +26,11 @@ export default function App() {
     // Load tasks from localStorage on app start
     const savedTasks = localStorage.getItem('tasks');
     return savedTasks ? JSON.parse(savedTasks) : [
-      { id: 1, text: 'Learn React basics', completed: true },
-      { id: 2, text: 'Build a todo app', completed: false },
-      { id: 3, text: 'Practice with hooks', completed: false }
+      { id: 1, text: 'Learn React basics', completed: false }
     ];
   });
 
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState('');
 
   // Save tasks to localStorage whenever they change
   useEffect(() => {
@@ -194,5 +192,5 @@ export default function App() {
         </div>
       </div>
     </div>
-  )
+  );
 }
