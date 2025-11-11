@@ -10,4 +10,5 @@ html, body, #root {
 body {
   margin: 0;
   font-family: var(--font-sans);
+  overflow-x: hidden; /* Prevent horizontal overflow on small screens */
 }
